@@ -6,8 +6,13 @@
   ],
   "version": "1.0.0",
   "description": "Monorepo para microfrontends usando React e TypeScript",
-  "keywords": ["monorepo", "microfrontend", "react", "typescript"],
-  "main": "index.js",    
+  "keywords": [
+    "monorepo",
+    "microfrontend",
+    "react",
+    "typescript"
+  ],
+  "main": "index.js",
   "scripts": {
     "bootstrap": "npm install && npm run build",
     "build": "npm run build --workspaces",
@@ -25,5 +30,16 @@
   "bugs": {
     "url": "https://github.com/AlaminoCS/tinyfronts/issues"
   },
-  "homepage": "https://github.com/AlaminoCS/tinyfronts#readme"
+  "lint-staged": {
+  "packages/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "homepage": "https://github.com/AlaminoCS/tinyfronts#readme",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.4.3"
+  }
 }

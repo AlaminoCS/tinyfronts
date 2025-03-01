@@ -5,20 +5,22 @@
     "packages/*"
   ],
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Monorepo para microfrontends usando React e TypeScript",
+  "keywords": ["monorepo", "microfrontend", "react", "typescript"],
+  "main": "index.js",    
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "bootstrap": "npm install && npm run build",
     "build": "npm run build --workspaces",
-    "start": "npm start --workspaces"
+    "start": "npm start --workspaces",
+    "start:pizza-party": "npm start --workspace=pizza-party",
+    "start:rancho-cambara": "npm start --workspace=rancho-cambara",
+    "start:park-and-co": "npm start --workspace=park-and-co"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlaminoCS/tinyfronts.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Alamino Code Solutions",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlaminoCS/tinyfronts/issues"

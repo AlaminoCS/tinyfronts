@@ -29,17 +29,16 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlaminoCS/tinyfronts/issues"
-  },
-  "lint-staged": {
-  "packages/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
+  },  
   "homepage": "https://github.com/AlaminoCS/tinyfronts#readme",
   "devDependencies": {
     "eslint": "^8.57.1",
     "husky": "^8.0.0",
     "lint-staged": "^15.4.3"
+  },
+  "lint-staged": {
+    "packages/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
   }
 }

@@ -158,4 +158,4 @@ Atualmente, o monorepo contém os seguintes microfrontends:
 ## **Licença**
 
 Este projeto está licenciado sob a **ISC License**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```
+

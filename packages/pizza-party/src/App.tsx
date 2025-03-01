@@ -11,3 +11,4 @@ export default App;
 
 // Variável não utilizada para forçar um erro de lint
 const unusedVariable = 'This will trigger an ESLint error';
+const unusedVariable2 = 'This will trigger an ESLint error';

@@ -1,4 +1,3 @@
-
 # **TinyFronts**
 
 **TinyFronts** é um monorepo para gerenciar microfrontends usando React e TypeScript. Ele foi projetado para facilitar o desenvolvimento modular e escalável de aplicações frontend para diferentes clientes ou funcionalidades.
@@ -12,8 +11,11 @@
    - [Instalação](#instalação)
    - [Executar um Projeto Específico](#executar-um-projeto-específico)
    - [Build de Todos os Projetos](#build-de-todos-os-projetos)
-5. [Projetos Atuais](#projetos-atuais)
-6. [Contribuição](#contribuição)
+5. [Qualidade de Código](#qualidade-de-código)
+   - [ESLint](#eslint)
+   - [Prettier](#prettier)
+   - [Husky](#husky)
+6. [Projetos Atuais](#projetos-atuais)
 7. [Licença](#licença)
 
 ---
@@ -41,6 +43,9 @@ tinyfronts/
 │   ├── rancho-cambara/     # Microfrontend 2: Rancho Cambará
 │   ├── park-and-co/        # Microfrontend 3: Park&Co Estacionamentos
 ├── package.json            # Configuração principal do monorepo
+├── .eslintrc.json          # Configuração do ESLint
+├── .prettierrc.json        # Configuração do Prettier
+├── .husky/                 # Configuração do Husky
 └── README.md               # Documentação geral do monorepo
 ```
 
@@ -101,6 +106,34 @@ npm run build
 
 ---
 
+## **Qualidade de Código**
+
+Este monorepo utiliza ferramentas para garantir a qualidade e consistência do código.
+
+### **ESLint**
+
+O ESLint é configurado para detectar problemas de sintaxe, estilo e boas práticas. As regras estão definidas no arquivo `.eslintrc.json`. Para executar o ESLint manualmente:
+
+```bash
+npx eslint "packages/**/*.{js,jsx,ts,tsx}"
+```
+
+### **Prettier**
+
+O Prettier é usado para formatar automaticamente o código, garantindo um estilo consistente. A configuração está no arquivo `.prettierrc.json`. Para formatar todos os arquivos do monorepo:
+
+```bash
+npm run format
+```
+
+> **Nota**: O script `format` foi adicionado ao `package.json` para facilitar a execução do Prettier.
+
+### **Husky**
+
+O Husky garante que commits só sejam feitos se o código estiver formatado corretamente e passar pelo ESLint. Ele está configurado para rodar automaticamente o `lint-staged` antes de cada commit.
+
+---
+
 ## **Projetos Atuais**
 
 Atualmente, o monorepo contém os seguintes microfrontends:
@@ -125,4 +158,4 @@ Atualmente, o monorepo contém os seguintes microfrontends:
 ## **Licença**
 
 Este projeto está licenciado sob a **ISC License**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
+```

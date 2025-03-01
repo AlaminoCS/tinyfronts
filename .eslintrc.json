@@ -1,0 +1,33 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "rules": {
+      "react/react-in-jsx-scope": "off", // Não exige importar React explicitamente
+      "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], // Permite JSX em arquivos .tsx
+      "import/extensions": "off", // Desativa a exigência de extensões nos imports
+      "no-unused-vars": "warn", // Avisa sobre variáveis não utilizadas
+      "@typescript-eslint/no-unused-vars": "error", // Erro para variáveis não utilizadas em TypeScript
+      "indent": ["error", 2], // Usa 2 espaços para indentação
+      "linebreak-style": ["error", "unix"], // Estilo de quebra de linha UNIX
+      "quotes": ["error", "single"], // Usa aspas simples
+      "semi": ["error", "always"] // Sempre usa ponto-e-vírgula
+    }
+  }

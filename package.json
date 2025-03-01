@@ -1,0 +1,27 @@
+{
+  "name": "tinyfronts",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "npm install && npm run build",
+    "build": "npm run build --workspaces",
+    "start": "npm start --workspaces"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlaminoCS/tinyfronts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlaminoCS/tinyfronts/issues"
+  },
+  "homepage": "https://github.com/AlaminoCS/tinyfronts#readme"
+}

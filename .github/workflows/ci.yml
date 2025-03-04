@@ -27,9 +27,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Passo 4: Rodar ESLint
+      # Passo 4: Rodar ESLint      
       - name: Run ESLint
-        run: npx eslint packages/**/*.{js,jsx,ts,tsx}
+        run: npm run lint
 
       # Passo 5: Rodar testes (opcional)
       - name: Run tests

@@ -14,6 +14,7 @@
   ],
   "main": "index.js",
   "scripts": {
+    "lint": "eslint $(find packages -type f \\( -name '*.js' -o -name '*.jsx' -o -name '*.ts' -o -name '*.tsx' \\))",
     "bootstrap": "npm install && npm run build",
     "build": "npm run build --workspaces",
     "start": "npm start --workspaces",

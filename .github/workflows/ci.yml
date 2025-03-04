@@ -1,0 +1,46 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Passo 1: Fazer checkout do código
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Passo 2: Configurar Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Passo 3: Instalar dependências
+      - name: Install dependencies
+        run: npm install
+
+      # Passo 4: Rodar ESLint
+      - name: Run ESLint
+        run: npx eslint packages/**/*.{js,jsx,ts,tsx}
+
+      # Passo 5: Rodar testes (opcional)
+      - name: Run tests
+        run: npm test --if-present
+
+      # Passo 6: Gerar builds para cada microfrontend
+      - name: Build pizza-party
+        run: npm run build --workspace=pizza-party
+
+      - name: Build rancho-cambara
+        run: npm run build --workspace=rancho-cambara
+
+      - name: Build park-and-co
+        run: npm run build --workspace=park-and-co

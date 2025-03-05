@@ -1,0 +1,2 @@
+# Ignorar conversões de quebras de linha para arquivos gerados
+packages/*/dist/* text eol=lf

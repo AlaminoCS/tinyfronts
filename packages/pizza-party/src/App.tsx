@@ -1,10 +1,10 @@
-import React from 'react'
+import Count from './components/Count'
 
-const App: React.FC = () => (
-  <div>
-    <h1>Welcome to Pizza Party!</h1>
-    <p>This is a microfrontend example with React and TypeScript.</p>
-  </div>
+const App = () => (
+  <>
+    <h1>Pizza Party</h1>
+    <Count />
+  </>
 )
 
 export default App

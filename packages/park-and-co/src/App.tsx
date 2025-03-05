@@ -6,7 +6,7 @@ import { parkAndCoTheme } from './theme'
 const App: React.FC = () => (
   <ThemeProvider theme={parkAndCoTheme}>
     <GlobalStyles />
-    <h1>Bem-vindo ao Park&Co Estacionamentos!</h1>
+    <h1>Park&Co Estacionamentos!</h1>
     <p>Este é um microfrontend dedicado ao cliente Park&Co.</p>
   </ThemeProvider>
 )

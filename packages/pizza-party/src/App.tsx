@@ -8,7 +8,7 @@ const App = () => {
   return (
     <ThemeProvider theme={pizzaPartyTheme}>
       <GlobalStyles />
-      <h1>Pizza Party</h1>
+      <h1>Projeto Pizza Party</h1>
       <Count />
     </ThemeProvider>
   )

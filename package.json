@@ -14,7 +14,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "lint": "eslint $(find packages -type f \\( -name '*.js' -o -name '*.jsx' -o -name '*.ts' -o -name '*.tsx' \\))",
+    "lint": "eslint packages --ext .js,.jsx,.ts,.tsx",
     "bootstrap": "npm install && npm run build",
     "build": "npm run build --workspaces",
     "start": "npm start --workspaces",
@@ -51,7 +51,8 @@
     "packages/**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint --fix",
-      "eslint --max-warnings=0"
+      "eslint --max-warnings=0",
+      "git add"
     ]
   },
   "dependencies": {

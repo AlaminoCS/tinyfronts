@@ -1,0 +1,10 @@
+# Ignorar dependências
+**/node_modules/
+packages/*/node_modules/
+
+# Ignorar arquivos gerados
+packages/*/dist/
+
+# Ignorar arquivos de build temporários
+**/*.d.ts
+**/*.js.map

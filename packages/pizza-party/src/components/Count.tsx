@@ -1,4 +1,3 @@
-// src/components/Count.tsx
 import React, { useState } from 'react'
 import { StyledButton, StyledCounter } from './Count.styles'
 

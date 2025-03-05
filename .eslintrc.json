@@ -38,6 +38,7 @@
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "import/no-unresolved": "error",
+    "react/require-default-props": "off",
     "prettier/prettier": [
       "error",
       {
@@ -45,6 +46,13 @@
         "tabWidth": 2,
         "semi": false,
         "singleQuote": true
+      }
+    ],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
       }
     ]
   }

@@ -11,12 +11,16 @@
    - [Instalação](#instalação)
    - [Executar um Projeto Específico](#executar-um-projeto-específico)
    - [Build de Todos os Projetos](#build-de-todos-os-projetos)
-5. [Qualidade de Código](#qualidade-de-código)
+5. [Cargo Components](#cargo-components)
+   - [O Que É?](#o-que-é)
+   - [Como Usar](#como-usar-1)
+   - [Contribuir com Cargo Components](#contribuir-com-cargo-components)
+6. [Qualidade de Código](#qualidade-de-código)
    - [ESLint](#eslint)
    - [Prettier](#prettier)
    - [Husky](#husky)
-6. [Projetos Atuais](#projetos-atuais)
-7. [Licença](#licença)
+7. [Projetos Atuais](#projetos-atuais)
+8. [Licença](#licença)
 
 ---
 
@@ -39,6 +43,7 @@ A estrutura do monorepo segue o padrão abaixo:
 ```
 tinyfronts/
 ├── packages/               # Pasta para todos os microfrontends
+│   ├── cargo-components/   # Biblioteca de componentes reutilizáveis
 │   ├── pizza-party/        # Microfrontend 1: Pizza Party
 │   ├── rancho-cambara/     # Microfrontend 2: Rancho Cambará
 │   ├── park-and-co/        # Microfrontend 3: Park&Co Estacionamentos
@@ -49,7 +54,7 @@ tinyfronts/
 └── README.md               # Documentação geral do monorepo
 ```
 
-Cada pasta dentro de `packages/` representa um microfrontend independente.
+Cada pasta dentro de `packages/` representa um microfrontend independente ou uma biblioteca compartilhada.
 
 ---
 
@@ -106,6 +111,79 @@ npm run build
 
 ---
 
+## **Cargo Components**
+
+### **O Que É?**
+
+O `cargo-components` é uma biblioteca centralizada de componentes reutilizáveis que podem ser usados por todos os microfrontends. Ele foi criado para:
+
+- Centralizar componentes comuns (ex.: botões, inputs, headers).
+- Reduzir duplicação de código entre microfrontends.
+- Garantir consistência visual e funcional em toda a aplicação.
+
+### **Como Usar**
+
+1. **Instalar o `cargo-components`**
+   Nos microfrontends, instale o `cargo-components` como uma dependência local:
+
+   ```bash
+   npm install ../cargo-components
+   ```
+
+2. **Importar Componentes**
+   Importe os componentes diretamente nos seus microfrontends. Por exemplo:
+
+   ```tsx
+   import React from 'react';
+   import { Button } from 'cargo-components';
+
+   const App = () => (
+     <div>
+       <h1>Exemplo de Uso</h1>
+       <Button label="Click Me" />
+     </div>
+   );
+
+   export default App;
+   ```
+
+3. **Atualizar o `cargo-components`**
+   Sempre que houver mudanças no `cargo-components`, siga estes passos:
+   - No `cargo-components`, gere uma nova build:
+     ```bash
+     npm run build
+     ```
+   - Nos microfrontends, atualize a dependência:
+     ```bash
+     npm update cargo-components
+     ```
+
+### **Contribuir com Cargo Components**
+
+Se você deseja adicionar novos componentes ao `cargo-components`, siga estas etapas:
+
+1. **Criar o Componente**
+   Adicione o novo componente na pasta `src/components` do `cargo-components`. Certifique-se de seguir as convenções de estilo e tipagem.
+
+2. **Exportar o Componente**
+   Exporte o novo componente no arquivo `src/index.ts`:
+
+   ```typescript
+   export { default as NewComponent } from './components/NewComponent';
+   ```
+
+3. **Gerar a Build**
+   Execute o comando de build para gerar os arquivos compilados:
+
+   ```bash
+   npm run build
+   ```
+
+4. **Testar Localmente**
+   Instale o `cargo-components` em um microfrontend e teste o novo componente antes de fazer commit.
+
+---
+
 ## **Qualidade de Código**
 
 Este monorepo utiliza ferramentas para garantir a qualidade e consistência do código.
@@ -158,4 +236,3 @@ Atualmente, o monorepo contém os seguintes microfrontends:
 ## **Licença**
 
 Este projeto está licenciado sob a **ISC License**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-

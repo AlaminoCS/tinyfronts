@@ -1,6 +1,6 @@
 {
   "name": "rancho-cambara",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -12,7 +12,6 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "styled-components": "^6.1.15",
-    "cargo-components": "file:packages/cargo-components",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",

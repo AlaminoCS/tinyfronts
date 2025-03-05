@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import GlobalStyles from 'cargo-components/src/styles/GlobalStyles'
+import { GlobalStyles } from 'cargo-components'
 import { parkAndCoTheme } from './theme'
 
 const App: React.FC = () => (

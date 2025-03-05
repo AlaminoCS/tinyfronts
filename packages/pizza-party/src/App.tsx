@@ -1,10 +1,10 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import GlobalStyles from 'cargo-components/src/styles/GlobalStyles'
+import { GlobalStyles } from 'cargo-components'
 import Count from './components/Count'
 import { pizzaPartyTheme } from './theme'
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <ThemeProvider theme={pizzaPartyTheme}>
       <GlobalStyles />

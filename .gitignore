@@ -9,7 +9,6 @@
 # production
 /build
 packages/*/dist/
-packages/*/cargo-components-*.tgz
 
 # misc
 .DS_Store

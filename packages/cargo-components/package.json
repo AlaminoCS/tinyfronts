@@ -5,9 +5,7 @@
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "dependencies": {
+    "react-dom": "^19.0.0",
     "styled-components": "^6.1.15"
   },
   "devDependencies": {

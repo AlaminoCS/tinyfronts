@@ -1,8 +1,8 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from 'cargo-components'
-import Count from './components/Count'
 import { pizzaPartyTheme } from './theme'
+import Count from './components/Count'
 
 const App: React.FC = () => {
   return (

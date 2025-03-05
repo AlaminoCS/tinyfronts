@@ -7,7 +7,7 @@ import Count from './components/Count'
 const App: React.FC = () => (
   <ThemeProvider theme={parkAndCoTheme}>
     <GlobalStyles />
-    <h1>Park&Co Estacionamentos!</h1>
+    <h1>Park&Co Estacionamentos</h1>
     <Count />
   </ThemeProvider>
 )

@@ -15,7 +15,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint packages --ext .js,.jsx,.ts,.tsx",
-    "bootstrap": "npm install && npm run build",
+    "bootstrap": "npm install && npm run build --workspace=cargo-components",
     "build": "npm run build --workspaces",
     "start": "npm start --workspaces",
     "start:pizza-party": "npm start --workspace=pizza-party",

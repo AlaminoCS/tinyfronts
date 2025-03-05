@@ -27,20 +27,18 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Passo 4: Rodar ESLint      
+      # Passo 4: Compilar cargo-components
+      - name: Build cargo-components
+        run: npm run build --workspace=cargo-components
+
+      # Passo 5: Rodar ESLint
       - name: Run ESLint
         run: npm run lint
 
-      # Passo 5: Rodar testes (opcional)
+      # Passo 6: Rodar testes (opcional)
       - name: Run tests
         run: npm test --if-present
 
-      # Passo 6: Gerar builds para cada microfrontend
-      - name: Build pizza-party
-        run: npm run build --workspace=pizza-party
-
-      - name: Build rancho-cambara
-        run: npm run build --workspace=rancho-cambara
-
-      - name: Build park-and-co
-        run: npm run build --workspace=park-and-co
+      # Passo 7: Gerar builds para todos os microfrontends
+      - name: Build all microfrontends
+        run: npm run build --workspaces

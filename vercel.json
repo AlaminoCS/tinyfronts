@@ -5,4 +5,4 @@
       },
       "command": "npm install && npm run build --workspace=cargo-components && npm run build --workspaces"
     }
-} 
+  }

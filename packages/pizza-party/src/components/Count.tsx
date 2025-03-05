@@ -1,13 +1,14 @@
+// src/components/Count.tsx
 import React, { useState } from 'react'
-import { Button } from 'cargo-components'
+import { StyledButton, StyledCounter } from './Count.styles'
 
 const Count: React.FC = () => {
   const [count, setCount] = useState<number>(0)
 
   return (
     <>
-      <Button label="Click Me" onClick={() => setCount(count + 1)} />
-      <p>{count}</p>
+      <StyledButton onClick={() => setCount(count + 1)}>Click Me</StyledButton>
+      <StyledCounter>{count}</StyledCounter>
     </>
   )
 }

@@ -16,5 +16,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "../cargo-components/src/styles"]
+  "include": ["src", "../cargo-components/src/styles", "../cargo-components/src/styles"]
 }

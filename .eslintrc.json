@@ -20,6 +20,13 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
@@ -30,6 +37,15 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
-    "prettier/prettier": "error"
+    "import/no-unresolved": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "lf",
+        "tabWidth": 2,
+        "semi": false,
+        "singleQuote": true
+      }
+    ]
   }
 }

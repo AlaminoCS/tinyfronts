@@ -50,7 +50,12 @@
   "lint-staged": {
     "packages/**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
+      "eslint --fix",
       "eslint --max-warnings=0"
     ]
+  },
+  "dependencies": {
+    "styled-components": "^6.1.15",
+    "cargo-components": "file:packages/cargo-components"
   }
 }

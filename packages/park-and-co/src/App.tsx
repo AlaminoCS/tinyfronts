@@ -1,10 +1,14 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import GlobalStyles from 'cargo-components/src/styles/GlobalStyles'
+import { parkAndCoTheme } from './theme'
 
 const App: React.FC = () => (
-  <div>
+  <ThemeProvider theme={parkAndCoTheme}>
+    <GlobalStyles />
     <h1>Bem-vindo ao Park&Co Estacionamentos!</h1>
     <p>Este é um microfrontend dedicado ao cliente Park&Co.</p>
-  </div>
+  </ThemeProvider>
 )
 
 export default App

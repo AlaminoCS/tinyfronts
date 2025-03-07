@@ -1,14 +1,13 @@
-// packages/park-and-co/src/theme.ts
 export const parkAndCoTheme = {
   colors: {
-    primary: '#3498db', // Azul moderno
-    secondary: '#ecf0f1', // Cinza claro
-    background: '#ffffff', // Fundo branco
-    text: '#333333', // Texto escuro
-    success: '#2ecc71', // Verde para sucesso
-    danger: '#e74c3c', // Vermelho para erro
-    warning: '#f1c40f', // Amarelo para aviso
-    info: '#3498db', // Azul para informação
+    primary: '#3498db',
+    secondary: '#ecf0f1',
+    background: '#ffffff',
+    text: '#333333',
+    success: '#2ecc71',
+    danger: '#e74c3c',
+    warning: '#f1c40f',
+    info: '#3498db',
   },
   spacing: {
     small: '8px',

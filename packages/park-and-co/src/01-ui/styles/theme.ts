@@ -1,13 +1,15 @@
 export const parkAndCoTheme = {
   colors: {
-    primary: '#3498db',
-    secondary: '#ecf0f1',
-    background: '#ffffff',
-    text: '#333333',
-    success: '#2ecc71',
-    danger: '#e74c3c',
-    warning: '#f1c40f',
-    info: '#3498db',
+    primary: '#721817', // Cor principal (vermelho/marrom escuro)
+    secondary: '#9F2624', // Variação mais clara da cor principal
+    background: '#ffffff', // Fundo claro
+    text: '#000000', // Texto escuro
+    success: '#4CAF50', // Verde para sucesso
+    danger: '#D32F2F', // Vermelho para erro/perigo
+    warning: '#FFA000', // Laranja para avisos
+    info: '#2196F3', // Azul para informações
+    muted: '#F5F5F5', // Fundo secundário ou elementos desabilitados
+    accent: '#FFB74D', // Destaque amarelado para interações
   },
   spacing: {
     small: '8px',
@@ -16,9 +18,9 @@ export const parkAndCoTheme = {
     xlarge: '32px',
   },
   fonts: {
-    main: 'Open Sans, sans-serif',
-    heading: 'Raleway, sans-serif',
-    code: 'monospace',
+    main: 'Open Sans, sans-serif', // Fonte principal
+    heading: 'Raleway, sans-serif', // Fonte para títulos
+    code: 'monospace', // Fonte para código
   },
   borderRadius: {
     small: '4px',

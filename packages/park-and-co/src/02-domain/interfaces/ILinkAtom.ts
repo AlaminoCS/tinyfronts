@@ -1,5 +1,7 @@
+import { ReactElement } from 'react'
+
 export interface IPropsLinkAtom {
   text: string
-  icon?: string
+  icon?: ReactElement
   href: string
 }

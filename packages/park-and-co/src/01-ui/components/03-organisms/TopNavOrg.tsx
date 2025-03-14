@@ -1,11 +1,10 @@
-import { ContactNavMolecule } from 'cargo-components'
-import MainNavMolecule from '../02-molecules/MainNavMolecule'
+import { ContactNavMolecule, MainNavMolecule } from 'cargo-components'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 
 const TopNavOrg = () => {
-  const links = [
+  const contactLinks = [
     {
       text: 'adm@parkcoestacionamentos.com',
       href: 'mailto:adm@parkcoestacionamentos.com',
@@ -28,10 +27,33 @@ const TopNavOrg = () => {
     },
   ]
 
+  const mainLinks = [
+    {
+      text: 'Quem somos',
+      href: '#quem-somos',
+    },
+    {
+      text: 'Nossos diferenciais',
+      href: '#nossos-diferenciais',
+    },
+    {
+      text: 'Serviços',
+      href: '#servicos',
+    },
+    {
+      text: 'Contato',
+      href: '#contato',
+    },
+  ]
+
+  const IMAGES = {
+    logo: new URL('../../../04-assets/images/logo.png', import.meta.url).href,
+  }
+
   return (
     <div>
-      <ContactNavMolecule links={links} />
-      <MainNavMolecule />
+      <ContactNavMolecule links={contactLinks} />
+      <MainNavMolecule links={mainLinks} logoSrc={IMAGES.logo} />
     </div>
   )
 }

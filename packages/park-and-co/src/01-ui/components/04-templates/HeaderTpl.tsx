@@ -1,8 +1,7 @@
-import BigImgCarousel from '../03-organisms/BigImgCarousel'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
-import { TopNavProvider, TopNavOrg } from 'cargo-components'
+import { TopNavProvider, TopNavOrg, BigImgCarousel } from 'cargo-components'
 
 const HeaderTpl = () => {
   const IMAGES = {
@@ -46,6 +45,24 @@ const HeaderTpl = () => {
     },
   ]
 
+  const banners = [
+    {
+      imageUrl: 'https://via.placeholder.com/1200x400?text=Banner+1',
+      title: 'Bem-vindo ao Park and Co',
+      description: 'Descubra nossos serviços exclusivos.',
+    },
+    {
+      imageUrl: 'https://via.placeholder.com/1200x400?text=Banner+2',
+      title: 'Qualidade e Excelência',
+      description: 'Trabalhamos para superar suas expectativas.',
+    },
+    {
+      imageUrl: 'https://via.placeholder.com/1200x400?text=Banner+3',
+      title: 'Entre em Contato',
+      description: 'Estamos prontos para atender você!',
+    },
+  ]
+
   return (
     <TopNavProvider
       value={{
@@ -56,7 +73,7 @@ const HeaderTpl = () => {
     >
       <header>
         <TopNavOrg />
-        <BigImgCarousel />
+        <BigImgCarousel banners={banners} />
       </header>
     </TopNavProvider>
   )

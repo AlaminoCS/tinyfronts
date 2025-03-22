@@ -1,22 +1,20 @@
-import { IImageAtom } from '../../../02-domain/interfaces/IImageAtom'
-import ImageAtom from '../01-atoms/ImageAtom'
-import ContentTitleTextMol from '../02-molecules/ContentTitleTextMol'
+import { SectionWithImage } from 'cargo-components'
+import { ISectionWithImage } from '../../../02-domain/interfaces/ISectionWithImage'
 
 const SectionDifferentialsTpl = () => {
-  const image: IImageAtom = {
-    src: '#',
-    alt: 'Diferenciais',
+  const sectionData: ISectionWithImage = {
+    imagePosition: 'left', // Pode ser 'left' ou 'right'
+    title: 'Diferenciais',
+    description: `
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat rem perspiciatis!</p>      
+    `,
+    image: {
+      src: '/assets/images/about-us.jpg', // Caminho relativo à pasta public
+      alt: 'Diferenciais',
+    },
   }
 
-  return (
-    <section>
-      <ImageAtom src={image.src} alt={image.alt} />
-      <ContentTitleTextMol
-        title="Diferenciais"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga esse sunt voluptates, magnam aspernatur unde maiores repellat vel necessitatibus animi, officiis voluptate vero natus id in sequi possimus porro nemo."
-      />
-    </section>
-  )
+  return <SectionWithImage {...sectionData} />
 }
 
 export default SectionDifferentialsTpl

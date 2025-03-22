@@ -3,19 +3,32 @@ import { ISectionWithImage } from '../../../02-domain/interfaces/ISectionWithIma
 import { SectionWithImage } from 'cargo-components'
 
 const SectionWhoWeAreTpl = () => {
+  const IMAGES = {
+    img1: new URL('../../../04-assets/images/quem-somos.jpg', import.meta.url)
+      .href,
+  }
+
   const sectionData: ISectionWithImage = {
-    imagePosition: 'right', // Pode ser 'left' ou 'right'
+    imagePosition: 'right',
     title: 'Quem somos',
     description: `
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat rem perspiciatis!</p>
-      <ul>
-        <li>Exercitationem iure ratione dolore aperiam.</li>
-        <li>Molestias magni, delectus possimus reprehenderit ut.</li>
-        <li>Similique ipsum minus? Voluptates veniam voluptas deleniti!</li>
-      </ul>
+      <p>
+        O <strong>Park&Co</strong> está no mercado desde 2016 e vem entendendo as necessidades dos clientes a 
+        cada dia onde já coleciona cases importantes de sucesso com o atendimento em grandes 
+        centros de referência em clinicas médicas, prédios comerciais,hospitais e academias 
+        de ginástica como parceiros de trabalho, o que nos capacitou cada vez mais a oferecer 
+        o melhor serviço para sua empresa.
+      </p>
+      <p>
+        A empresa <strong>Park&Co</strong> é especializada no ramo de gestão de estacionamentos e garagens 
+        onde busca primeiramente o conforto para seus clientes, segurança em confiar 
+        seus veículos a nós, além da excelência no atendimento, tornando assim, uma 
+        experiência diferenciada aos frequentadores.
+      </p>
+
     `,
     image: {
-      src: '/assets/images/about-us.jpg', // Caminho relativo à pasta public
+      src: IMAGES.img1,
       alt: 'Quem somos',
     },
   }

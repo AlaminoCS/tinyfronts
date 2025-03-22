@@ -4,11 +4,16 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 import { TopNavProvider, TopNavOrg, BigImgCarousel } from 'cargo-components'
 
 const HeaderTpl = () => {
-  const url = '../../../04-assets/images'
-
   const IMAGES = {
-    logo: new URL(`${url}/logo.png`, import.meta.url).href,
-    banner: new URL(`${url}/banner.jpg`, import.meta.url).href,
+    logo: new URL('../../../04-assets/images/logo.png', import.meta.url).href,
+    banner: new URL('../../../04-assets/images/banner.png', import.meta.url)
+      .href,
+    banner1: new URL('../../../04-assets/images/banner.jpg', import.meta.url)
+      .href,
+    banner2: new URL('../../../04-assets/images/banner2.jpg', import.meta.url)
+      .href,
+    banner3: new URL('../../../04-assets/images/banner3.jpg', import.meta.url)
+      .href,
   }
 
   const contactLinks = [
@@ -50,17 +55,17 @@ const HeaderTpl = () => {
 
   const banners = [
     {
-      imageUrl: IMAGES.banner,
+      imageUrl: IMAGES.banner1,
       title: 'Bem-vindo ao Park and Co',
       description: 'Descubra nossos serviços exclusivos.',
     },
     {
-      imageUrl: IMAGES.banner,
+      imageUrl: IMAGES.banner2,
       title: 'Qualidade e Excelência',
       description: 'Trabalhamos para superar suas expectativas.',
     },
     {
-      imageUrl: IMAGES.banner,
+      imageUrl: IMAGES.banner3,
       title: 'Entre em Contato',
       description: 'Estamos prontos para atender você!',
     },

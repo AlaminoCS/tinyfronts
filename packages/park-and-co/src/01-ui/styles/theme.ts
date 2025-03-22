@@ -22,6 +22,14 @@ export const parkAndCoTheme = {
     heading: 'Raleway, sans-serif', // Fonte para títulos
     code: 'monospace', // Fonte para código
   },
+  fontSizes: {
+    h1: '3rem', // 48px (3 * 16px)
+    h2: '2.5rem', // 40px
+    h3: '2rem', // 32px
+    h4: '1.75rem', // 28px
+    h5: '1.5rem', // 24px
+    h6: '1.25rem', // 20px
+  },
   borderRadius: {
     small: '4px',
     medium: '8px',

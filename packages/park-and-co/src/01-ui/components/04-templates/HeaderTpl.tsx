@@ -4,8 +4,11 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 import { TopNavProvider, TopNavOrg, BigImgCarousel } from 'cargo-components'
 
 const HeaderTpl = () => {
+  const url = '../../../04-assets/images'
+
   const IMAGES = {
-    logo: new URL('../../../04-assets/images/logo.png', import.meta.url).href,
+    logo: new URL(`${url}/logo.png`, import.meta.url).href,
+    banner: new URL(`${url}/banner.jpg`, import.meta.url).href,
   }
 
   const contactLinks = [
@@ -47,17 +50,17 @@ const HeaderTpl = () => {
 
   const banners = [
     {
-      imageUrl: 'https://via.placeholder.com/1200x400?text=Banner+1',
+      imageUrl: IMAGES.banner,
       title: 'Bem-vindo ao Park and Co',
       description: 'Descubra nossos serviços exclusivos.',
     },
     {
-      imageUrl: 'https://via.placeholder.com/1200x400?text=Banner+2',
+      imageUrl: IMAGES.banner,
       title: 'Qualidade e Excelência',
       description: 'Trabalhamos para superar suas expectativas.',
     },
     {
-      imageUrl: 'https://via.placeholder.com/1200x400?text=Banner+3',
+      imageUrl: IMAGES.banner,
       title: 'Entre em Contato',
       description: 'Estamos prontos para atender você!',
     },

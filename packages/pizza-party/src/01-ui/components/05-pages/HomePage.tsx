@@ -14,6 +14,7 @@ import {
   SectionWhoWeAreTpl 
 } from 'cargo-components'
 
+
 const HomePage = () => {
 
   const IMAGES = {

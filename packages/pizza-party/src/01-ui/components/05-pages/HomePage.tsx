@@ -2,35 +2,20 @@ import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 
-import { 
-  HeaderTpl, 
-  ISectionDifferentialsProps, 
-  ISectionOurServicesProps, 
-  IService, 
-  SectionContainerImageTpl, 
-  SectionDifferentialsTpl, 
-  SectionLocationTpl, 
-  SectionOurServicesOrg, 
-  SectionWhoWeAreTpl 
+import {
+  HeaderTpl,
+  ISectionDifferentialsProps,
+  ISectionOurServicesProps,
+  IService,
+  SectionContainerImageTpl,
+  SectionDifferentialsTpl,
+  SectionLocationTpl,
+  SectionOurServicesOrg,
+  SectionWhoWeAreTpl,
 } from 'cargo-components'
-
+import { IMAGES } from '../../../07-mocks/images'
 
 const HomePage = () => {
-
-  const IMAGES = {
-    logo: new URL('../../../04-assets/images/logo.png', import.meta.url).href,
-    banner: new URL('../../../04-assets/images/banner.png', import.meta.url).href,
-    banner1: new URL('../../../04-assets/images/banner.jpg', import.meta.url).href,
-    banner2: new URL('../../../04-assets/images/banner2.jpg', import.meta.url).href,
-    banner3: new URL('../../../04-assets/images/banner3.jpg', import.meta.url).href,
-    servicos1: new URL('../../../04-assets/images/nossos-servicos.jpg', import.meta.url).href,
-    servicos2: new URL('../../../04-assets/images/nossos-servicos-2.jpg', import.meta.url).href,
-    servicos3: new URL('../../../04-assets/images/nossos-servicos-3.jpg', import.meta.url).href,
-    separadora: new URL('../../../04-assets/images/imagem-separadora.jpg', import.meta.url).href,
-    diferenciais: new URL('../../../04-assets/images/diferenciais.jpg', import.meta.url).href,
-    quemSomos: new URL('../../../04-assets/images/quem-somos.jpg', import.meta.url).href
-  }
-
   const contactLinks = [
     {
       text: 'contato@parkandco.com',
@@ -47,7 +32,7 @@ const HomePage = () => {
       href: 'https://maps.google.com/?q=R.+dos+Parques,+789',
       icon: <LocationOnIcon />,
     },
-  ];
+  ]
 
   const mainLinks = [
     {
@@ -70,7 +55,7 @@ const HomePage = () => {
       text: 'Contato',
       href: '#contato',
     },
-  ];
+  ]
 
   const banners = [
     {
@@ -88,14 +73,14 @@ const HomePage = () => {
       title: 'Entre em Contato',
       description: 'Estamos prontos para atender você!',
     },
-  ];
+  ]
 
   const headerData = {
     contactLinks,
     mainLinks,
     logoSrc: IMAGES.logo,
     banners,
-  };
+  }
 
   const locationData = {
     title: 'Onde estamos',
@@ -104,8 +89,8 @@ const HomePage = () => {
       title: 'Localização no Google Maps',
       src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5213618891225!2d-47.458225425423954!3d-23.513743559843032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a84ebf90e83%3A0xaaba7d54565fad40!2sAv.%20Comendador%20Pereira%20In%C3%A1cio%2C%20900%20-%20Jardim%20Vergueiro%2C%20Sorocaba%20-%20SP%2C%2018030-005!5e0!3m2!1spt-BR!2sbr!4v1741374513958!5m2!1spt-BR!2sbr',
     },
-    id: 'localizacao'
-  };
+    id: 'localizacao',
+  }
 
   const ourServices: IService[] = [
     {
@@ -126,18 +111,18 @@ const HomePage = () => {
       description:
         'Oferecemos um serviço completo de implantação de sistemas de estacionamento, desde a análise inicial até a execução e treinamento da equipe.',
     },
-  ];
+  ]
 
   const sectionData: ISectionOurServicesProps = {
     sectionTitle: 'Conheça nossos serviços',
     services: ourServices,
-    id: 'servicos'
-  };
+    id: 'servicos',
+  }
 
   const imageData = {
     src: IMAGES.separadora,
     alt: 'Imagem separadora',
-  };
+  }
 
   const differentialData: ISectionDifferentialsProps = {
     sectionData: {
@@ -184,10 +169,10 @@ const HomePage = () => {
         src: IMAGES.diferenciais,
         alt: 'Diferenciais',
       },
-      id: 'nossos-diferenciais'
+      id: 'nossos-diferenciais',
     },
-  };
-  
+  }
+
   const whoWeAreData: ISectionDifferentialsProps = {
     sectionData: {
       imagePosition: 'right', // Pode ser 'left' ou 'right'
@@ -211,10 +196,9 @@ const HomePage = () => {
         src: IMAGES.quemSomos,
         alt: 'Quem somos',
       },
-      id: 'quem-somos'
-    }
-    
-  };
+      id: 'quem-somos',
+    },
+  }
 
   return (
     <>

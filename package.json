@@ -12,7 +12,7 @@
     "react",
     "typescript"
   ],
-  "main": "index.js",
+  "main": "index.js", 
   "scripts": {
     "lint": "eslint packages --ext .js,.jsx,.ts,.tsx",
     "bootstrap": "npm install && npm run build --workspace=cargo-components",
@@ -20,7 +20,8 @@
     "start": "npm start --workspaces",
     "start:pizza-party": "npm start --workspace=pizza-party",
     "start:rancho-cambara": "npm start --workspace=rancho-cambara",
-    "start:park-and-co": "npm start --workspace=park-and-co"
+    "start:park-and-co": "npm start --workspace=park-and-co",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",

@@ -12,7 +12,7 @@
     "react",
     "typescript"
   ],
-  "main": "index.js", 
+  "main": "index.js",
   "scripts": {
     "lint": "eslint packages --ext .js,.jsx,.ts,.tsx",
     "bootstrap": "npm install && npm run build --workspace=cargo-components",
@@ -62,7 +62,7 @@
     "@material-ui/icons": "^4.11.3",
     "@mui/material": "^6.4.7",
     "@react-icons/all-files": "^4.1.0",
-    "cargo-components": "^1.1.3",
+    "cargo-components": "^1.1.31",
     "react-icons": "^5.5.0",
     "styled-components": "^6.1.15"
   }

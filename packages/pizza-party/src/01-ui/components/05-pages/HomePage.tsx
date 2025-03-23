@@ -3,6 +3,7 @@ import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 
 import {
+  ContactForm,
   HeaderTpl,
   ISectionDifferentialsProps,
   ISectionOurServicesProps,
@@ -243,6 +244,7 @@ const HomePage = () => {
       <SectionContainerImageTpl image={imageData} />
       <SectionDifferentialsTpl {...differentialData} />
       <SectionLocationTpl {...locationData} />
+      <ContactForm phoneNumber="5515981377293" />
     </>
   )
 }

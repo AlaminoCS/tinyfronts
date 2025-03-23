@@ -3,10 +3,10 @@ name: CI Pipeline
 on:
   push:
     branches:
-      - master 
+      - master
   pull_request:
     branches:
-      - master 
+      - master
 
 jobs:
   ci:
@@ -37,4 +37,17 @@ jobs:
 
       # Passo 6: Gerar builds para todos os microfrontends
       - name: Build all microfrontends
-        run: npm run build --workspaces
+        id: build-all
+        run: |
+          # Listar todos os pacotes no diretório "packages"
+          for package in packages/*; do
+            if [ -d "$package" ]; then
+              package_name=$(basename "$package")
+              echo "Building $package_name..."
+              
+              # Executar o build para cada pacote
+              npm run build --workspace=$package_name || exit 1
+              
+              echo "Successfully built $package_name!"
+            fi
+          done

@@ -45,7 +45,8 @@
         "endOfLine": "lf",
         "tabWidth": 2,
         "semi": false,
-        "singleQuote": true
+        "singleQuote": true,
+        "removeComments": true
       }
     ],
     "react/function-component-definition": [

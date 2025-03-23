@@ -126,6 +126,7 @@ const HomePage = () => {
   const sectionData: ISectionOurServicesProps = {
     sectionTitle: 'Conheça nossos serviços',
     services: ourServices,
+    id: 'servicos'
   };
 
   const imageData = {
@@ -139,7 +140,7 @@ const HomePage = () => {
       title: 'Diferenciais',
       description: `
         <p>
-          Gestão Transparente
+          <strong>Gestão Transparente</strong>
         </p>
   
         <p>
@@ -148,7 +149,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          Tecnologias de Ponta
+          <strong>Tecnologias de Ponta</strong>
         </p>
   
         <p>
@@ -157,7 +158,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          Capital Humano
+          <strong>Capital Humano</strong>
         </p>
   
         <p>
@@ -166,7 +167,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          Melhorias Contínuas
+          <strong>Melhorias Contínuas</strong>
         </p>
   
         <p>
@@ -178,6 +179,7 @@ const HomePage = () => {
         src: IMAGES.diferenciais,
         alt: 'Diferenciais',
       },
+      id: 'nossos-diferenciais'
     },
   };
   
@@ -204,19 +206,20 @@ const HomePage = () => {
         src: IMAGES.quemSomos,
         alt: 'Quem somos',
       },
+      id: 'quem-somos'
     }
     
   };
 
   return (
-    <Container>
+    <>
       <HeaderTpl {...headerData} />
       <SectionOurServicesOrg {...sectionData} />
       <SectionWhoWeAreTpl {...whoWeAreData} />
       <SectionContainerImageTpl image={imageData} />
       <SectionDifferentialsTpl {...differentialData} />
       <SectionLocationTpl {...locationData} />
-    </Container>
+    </>
   )
 }
 

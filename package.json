@@ -20,8 +20,7 @@
     "start": "npm start --workspaces",
     "start:pizza-party": "npm start --workspace=pizza-party",
     "start:rancho-cambara": "npm start --workspace=rancho-cambara",
-    "start:park-and-co": "npm start --workspace=park-and-co",
-    "prepare": "husky install"
+    "start:park-and-co": "npm start --workspace=park-and-co"
   },
   "repository": {
     "type": "git",

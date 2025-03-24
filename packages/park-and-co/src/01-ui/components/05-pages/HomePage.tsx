@@ -2,19 +2,19 @@ import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 
-// teste
-
 import {
   ContactForm,
   HeaderTpl,
   ISectionDifferentialsProps,
   ISectionOurServicesProps,
+  ISectionWhoWeAreProps,
   IService,
   SectionContainerImageTpl,
   SectionDifferentialsTpl,
   SectionLocationTpl,
   SectionOurServicesOrg,
   SectionWhoWeAreTpl,
+  SectionWithImages,
 } from 'cargo-components'
 
 const HomePage = () => {
@@ -52,6 +52,14 @@ const HomePage = () => {
       '../../../04-assets/images/quem-somos.jpg',
       import.meta.url
     ).href,
+    imagem1: new URL('../../../04-assets/images/imagem1.jpg', import.meta.url)
+      .href,
+    imagem2: new URL('../../../04-assets/images/imagem2.jpg', import.meta.url)
+      .href,
+    imagem3: new URL('../../../04-assets/images/imagem3.jpg', import.meta.url)
+      .href,
+    imagem4: new URL('../../../04-assets/images/imagem4.jpg', import.meta.url)
+      .href,
   }
 
   const contactLinks = [
@@ -168,7 +176,7 @@ const HomePage = () => {
       title: 'Diferenciais',
       description: `
         <p>
-          <strong>Gestão Transparente</strong>
+          Gestão Transparente
         </p>
   
         <p>
@@ -177,7 +185,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          <strong>Tecnologias de Ponta</strong>
+          Tecnologias de Ponta
         </p>
   
         <p>
@@ -186,7 +194,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          <strong>Capital Humano</strong>
+          Capital Humano
         </p>
   
         <p>
@@ -195,7 +203,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          <strong>Melhorias Contínuas</strong>
+          Melhorias Contínuas
         </p>
   
         <p>
@@ -211,9 +219,9 @@ const HomePage = () => {
     },
   }
 
-  const whoWeAreData: ISectionDifferentialsProps = {
+  const whoWeAreData: ISectionWhoWeAreProps = {
     sectionData: {
-      imagePosition: 'right', // Pode ser 'left' ou 'right'
+      imagePosition: 'right',
       title: 'Quem somos',
       description: `
         <p>
@@ -238,6 +246,16 @@ const HomePage = () => {
     },
   }
 
+  const sectionWithImagesText =
+    'O Park & Co. oferece uma diversidade de ações para seus clientes, contando com as tecnologias mais avançadas disponíveis para administração de estacionamento. Proporcionamos a todos maior conforto, segurança e acessibilidade. Realizamos serviços de implantação, viabilidade, otimização de espaço para que sua área seja rentável e bem aproveitada.'
+
+  const sectionWithImagesImages = [
+    IMAGES.imagem1,
+    IMAGES.imagem2,
+    IMAGES.imagem3,
+    IMAGES.imagem4,
+  ]
+
   return (
     <>
       <HeaderTpl {...headerData} />
@@ -247,6 +265,10 @@ const HomePage = () => {
       <SectionDifferentialsTpl {...differentialData} />
       <SectionLocationTpl {...locationData} />
       <ContactForm phoneNumber="5515981377293" />
+      <SectionWithImages
+        text={sectionWithImagesText}
+        images={sectionWithImagesImages}
+      />
     </>
   )
 }

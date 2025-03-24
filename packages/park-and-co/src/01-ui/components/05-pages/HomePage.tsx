@@ -4,6 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 
 import {
   ContactForm,
+  Footer,
   HeaderTpl,
   ISectionDifferentialsProps,
   ISectionOurServicesProps,
@@ -269,6 +270,7 @@ const HomePage = () => {
         text={sectionWithImagesText}
         images={sectionWithImagesImages}
       />
+      <Footer />
     </>
   )
 }

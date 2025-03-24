@@ -1,6 +1,7 @@
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
+import { IMAGES } from '../../../07-mocks/images'
 
 import {
   ContactForm,
@@ -19,50 +20,6 @@ import {
 } from 'cargo-components'
 
 const HomePage = () => {
-  const IMAGES = {
-    logo: new URL('../../../04-assets/images/logo.png', import.meta.url).href,
-    banner: new URL('../../../04-assets/images/banner.png', import.meta.url)
-      .href,
-    banner1: new URL('../../../04-assets/images/banner.jpg', import.meta.url)
-      .href,
-    banner2: new URL('../../../04-assets/images/banner2.jpg', import.meta.url)
-      .href,
-    banner3: new URL('../../../04-assets/images/banner3.jpg', import.meta.url)
-      .href,
-    servicos1: new URL(
-      '../../../04-assets/images/nossos-servicos.jpg',
-      import.meta.url
-    ).href,
-    servicos2: new URL(
-      '../../../04-assets/images/nossos-servicos-2.jpg',
-      import.meta.url
-    ).href,
-    servicos3: new URL(
-      '../../../04-assets/images/nossos-servicos-3.jpg',
-      import.meta.url
-    ).href,
-    separadora: new URL(
-      '../../../04-assets/images/imagem-separadora.jpg',
-      import.meta.url
-    ).href,
-    diferenciais: new URL(
-      '../../../04-assets/images/diferenciais.jpg',
-      import.meta.url
-    ).href,
-    quemSomos: new URL(
-      '../../../04-assets/images/quem-somos.jpg',
-      import.meta.url
-    ).href,
-    imagem1: new URL('../../../04-assets/images/imagem1.jpg', import.meta.url)
-      .href,
-    imagem2: new URL('../../../04-assets/images/imagem2.jpg', import.meta.url)
-      .href,
-    imagem3: new URL('../../../04-assets/images/imagem3.jpg', import.meta.url)
-      .href,
-    imagem4: new URL('../../../04-assets/images/imagem4.jpg', import.meta.url)
-      .href,
-  }
-
   const contactLinks = [
     {
       text: 'contato@parkandco.com',
@@ -177,7 +134,7 @@ const HomePage = () => {
       title: 'Diferenciais',
       description: `
         <p>
-          Gestão Transparente
+          <strong>Gestão Transparente</strong>
         </p>
   
         <p>
@@ -186,7 +143,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          Tecnologias de Ponta
+          <strong>Tecnologias de Ponta</strong>
         </p>
   
         <p>
@@ -195,7 +152,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          Capital Humano
+          <strong>Capital Humano</strong>
         </p>
   
         <p>
@@ -204,7 +161,7 @@ const HomePage = () => {
         </p>
   
         <p>
-          Melhorias Contínuas
+          <strong>Melhorias Contínuas</strong>
         </p>
   
         <p>
@@ -265,7 +222,7 @@ const HomePage = () => {
       <SectionContainerImageTpl image={imageData} />
       <SectionDifferentialsTpl {...differentialData} />
       <SectionLocationTpl {...locationData} />
-      <ContactForm phoneNumber="5515981377293" />
+      <ContactForm phoneNumber="5515991592329" />
       <SectionWithImages
         text={sectionWithImagesText}
         images={sectionWithImagesImages}

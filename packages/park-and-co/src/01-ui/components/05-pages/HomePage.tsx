@@ -27,13 +27,13 @@ const HomePage = () => {
       icon: <EmailIcon />,
     },
     {
-      text: '+55 11 98765-4321',
-      href: 'tel:+5511987654321',
+      text: '(15) 99150-9557',
+      href: 'tel:+5515991509557',
       icon: <PhoneIcon />,
     },
     {
-      text: 'Rua dos Parques, 789',
-      href: 'https://maps.google.com/?q=R.+dos+Parques,+789',
+      text: 'Comendador Pereira Inácio, 900',
+      href: 'https://g.co/kgs/ACsrcY7',
       icon: <LocationOnIcon />,
     },
   ]
@@ -64,7 +64,7 @@ const HomePage = () => {
   const banners = [
     {
       imageUrl: IMAGES.banner1,
-      title: 'Bem-vindo ao Park and Co',
+      title: 'Bem-vindo ao Park & Co',
       description: 'Descubra nossos serviços exclusivos.',
     },
     {
@@ -107,13 +107,13 @@ const HomePage = () => {
       image: IMAGES.servicos2,
       title: 'Vallet e SelfPark',
       description:
-        'O atendimento de vallet oferecido pela Park&Co está disponível para qualquer tipo de serviço, com profissionais treinados para garantir excelência no atendimento.',
+        'Operamos em diversas modalidades, entre elas o valet park, oferecendo comodidade aos clientes e self park para os clientes que desejem estacionar seus veículos.',
     },
     {
       image: IMAGES.servicos3,
       title: 'Implantação',
       description:
-        'Oferecemos um serviço completo de implantação de sistemas de estacionamento, desde a análise inicial até a execução e treinamento da equipe.',
+        'Oferecemos um serviço completo desde a implantação de sistema, operacional, treinamento, manutenção.',
     },
   ]
 
@@ -204,6 +204,8 @@ const HomePage = () => {
     },
   }
 
+  const sectionWithImagesTitle = 'A melhor companhia para o seu empreendimento'
+
   const sectionWithImagesText =
     'O Park & Co. oferece uma diversidade de ações para seus clientes, contando com as tecnologias mais avançadas disponíveis para administração de estacionamento. Proporcionamos a todos maior conforto, segurança e acessibilidade. Realizamos serviços de implantação, viabilidade, otimização de espaço para que sua área seja rentável e bem aproveitada.'
 
@@ -222,11 +224,12 @@ const HomePage = () => {
       <SectionContainerImageTpl image={imageData} />
       <SectionDifferentialsTpl {...differentialData} />
       <SectionLocationTpl {...locationData} />
-      <ContactForm phoneNumber="5515991592329" />
       <SectionWithImages
+        title={sectionWithImagesTitle}
         text={sectionWithImagesText}
         images={sectionWithImagesImages}
       />
+      <ContactForm phoneNumber="5515991509557" />
       <Footer />
     </>
   )

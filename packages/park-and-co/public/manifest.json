@@ -1,21 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Park & Co",
+  "name": "Park & Co - Gestão de Estacionamentos",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "ico-1.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "ico-2.jpg",
+      "sizes": "32x32",
+      "type": "image/jpeg"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "ico-3.jpg",
+      "sizes": "180x180",
+      "type": "image/jpeg"
     }
   ],
   "start_url": ".",

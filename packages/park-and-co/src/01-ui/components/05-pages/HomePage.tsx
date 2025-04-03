@@ -205,7 +205,7 @@ const HomePage = () => {
     },
   }
 
-  const sectionWithImagesTitle = 'A melhor companhia para o seu empreendimento'
+  //const sectionWithImagesTitle = 'A melhor companhia para o seu empreendimento'
 
   const sectionWithImagesText =
     'O Park & Co. oferece uma diversidade de ações para seus clientes, contando com as tecnologias mais avançadas disponíveis para administração de estacionamento. Proporcionamos a todos maior conforto, segurança e acessibilidade. Realizamos serviços de implantação, viabilidade, otimização de espaço para que sua área seja rentável e bem aproveitada.'

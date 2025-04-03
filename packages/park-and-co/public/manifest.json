@@ -1,6 +1,7 @@
 {
   "short_name": "Park & Co",
   "name": "Park & Co - Gestão de Estacionamentos",
+  "description": "Especialistas em gestão de estacionamentos e garagens em Sorocaba. Oferecemos serviços de administração de garagem, valet e self park com tecnologia de ponta.",
   "icons": [
     {
       "src": "ico-1.jpg",
@@ -21,5 +22,19 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "categories": ["business", "utilities", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "screenshot1.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "platform": "narrow",
+      "label": "Homepage"
+    }
+  ],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7"
 }

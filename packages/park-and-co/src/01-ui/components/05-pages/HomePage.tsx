@@ -205,17 +205,11 @@ const HomePage = () => {
     },
   }
 
-  //const sectionWithImagesTitle = 'A melhor companhia para o seu empreendimento'
-
-  const sectionWithImagesText =
-    'O Park & Co. oferece uma diversidade de ações para seus clientes, contando com as tecnologias mais avançadas disponíveis para administração de estacionamento. Proporcionamos a todos maior conforto, segurança e acessibilidade. Realizamos serviços de implantação, viabilidade, otimização de espaço para que sua área seja rentável e bem aproveitada.'
-
-  const sectionWithImagesImages = [
-    IMAGES.imagem1,
-    IMAGES.imagem2,
-    IMAGES.imagem3,
-    IMAGES.imagem4,
-  ]
+  const sectionWithImagesData = {
+    title: 'A melhor companhia para o seu empreendimento',
+    text: 'O Park & Co. oferece uma diversidade de ações para seus clientes, contando com as tecnologias mais avançadas disponíveis para administração de estacionamento. Proporcionamos a todos maior conforto, segurança e acessibilidade. Realizamos serviços de implantação, viabilidade, otimização de espaço para que sua área seja rentável e bem aproveitada.',
+    images: [IMAGES.imagem1, IMAGES.imagem2, IMAGES.imagem3, IMAGES.imagem4],
+  };
 
   const whatsappData = {
     phoneNumber: '5515991509557',
@@ -231,11 +225,7 @@ const HomePage = () => {
       <SectionContainerImageTpl image={imageData} />
       <SectionDifferentialsTpl {...differentialData} />
       <SectionLocationTpl {...locationData} />
-      <SectionWithImages
-        //title={sectionWithImagesTitle}
-        text={sectionWithImagesText}
-        images={sectionWithImagesImages}
-      />
+      <SectionWithImages {...sectionWithImagesData} />
       <ContactForm phoneNumber={whatsappData.phoneNumber} />
       <WhatsAppButtonAtom {...whatsappData} />
       <Footer />

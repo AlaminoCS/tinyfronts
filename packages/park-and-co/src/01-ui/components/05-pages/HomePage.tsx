@@ -300,11 +300,6 @@ const HomePage = () => {
       name: 'Alamino Code Solutions',
       website: 'https://alaminocode.com',
     },
-    // newsletter: {
-    //   title: 'Fique por dentro!',
-    //   description: 'Assine nossa newsletter e receba novidades e promoções exclusivas.',
-    //   buttonText: 'Assinar',
-    // },
   };
 
   return (

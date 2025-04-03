@@ -272,21 +272,13 @@ const HomePage = () => {
 
   const socialMediaLinks = [
     {
-      name: 'Facebook',
-      url: 'https://facebook.com/cargotransportes',
-    },
-    {
       name: 'Instagram',
-      url: 'https://instagram.com/cargotransportes',
+      url: 'https://www.instagram.com/park_coestacionamentos/',
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/company/cargotransportes',
-    },
-    {
-      name: 'YouTube',
-      url: 'https://youtube.com/cargotransportes',
-    },
+      url: 'https://www.linkedin.com/company/park-co-estacionamentos',
+    }
   ];
 
   const footerData = {
@@ -330,7 +322,7 @@ const HomePage = () => {
     },
     developerInfo: {
       name: 'Alamino Code Solutions',
-      website: 'https://alaminocode.com',
+      website: '#',
     },
   };
 

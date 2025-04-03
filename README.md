@@ -100,6 +100,10 @@ Exemplos:
   ```bash
   npm start --workspace=rancho-cambara
   ```
+  - Para o projeto `park-and-co`:
+  ```bash
+  npm start --workspace=park-and-co
+  ```  
 
 ### **Build de Todos os Projetos**
 

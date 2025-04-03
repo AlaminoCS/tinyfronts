@@ -17,6 +17,7 @@ import {
   SectionOurServicesOrg,
   SectionWhoWeAreTpl,
   SectionWithImages,
+  WhatsAppButtonAtom
 } from 'cargo-components'
 
 const HomePage = () => {
@@ -216,6 +217,12 @@ const HomePage = () => {
     IMAGES.imagem4,
   ]
 
+  const whatsappData = {
+    phoneNumber: '5515991509557',
+    defaultMessage:
+      'Olá! Vim através do seu site e gostaria de mais informações sobre os serviços da Park&Co.',
+  };
+
   return (
     <>
       <HeaderTpl {...headerData} />
@@ -225,11 +232,12 @@ const HomePage = () => {
       <SectionDifferentialsTpl {...differentialData} />
       <SectionLocationTpl {...locationData} />
       <SectionWithImages
-        title={sectionWithImagesTitle}
+        //title={sectionWithImagesTitle}
         text={sectionWithImagesText}
         images={sectionWithImagesImages}
       />
-      <ContactForm phoneNumber="5515991509557" />
+      <ContactForm phoneNumber={whatsappData.phoneNumber} />
+      <WhatsAppButtonAtom {...whatsappData} />
       <Footer />
     </>
   )

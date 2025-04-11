@@ -1,3 +1,5 @@
+import { IMAGES } from "./images";
+
 export const whoWeAreData = {
   sectionData: {
     imagePosition: 'right',
@@ -18,7 +20,7 @@ export const whoWeAreData = {
       </p>
     `,
     image: {
-      src: 'IMAGES.quemSomos',
+      src: IMAGES.quemSomos,
       alt: 'Quem somos',
     },
     id: 'quem-somos',

@@ -17,6 +17,7 @@ import {
   SectionOurServicesOrg,
   SectionWhoWeAreTpl,
   SectionWithImages,
+  VideoCardMolecule,
   WhatsAppButtonAtom
 } from 'cargo-components'
 
@@ -59,6 +60,10 @@ const HomePage = () => {
     {
       text: 'Contato',
       href: '#contato',
+    },
+    {
+      text: 'Vídeo Institucional',
+      href: '#video-card',
     },
   ]
 
@@ -278,7 +283,11 @@ const HomePage = () => {
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/company/park-co-estacionamentos',
-    }
+    },
+    {
+      name: 'Youtube',
+      url: 'https://www.youtube.com/@parkco.estacionamento7017',
+    },
   ];
 
   const footerData = {
@@ -335,6 +344,10 @@ const HomePage = () => {
       <SectionDifferentialsTpl {...differentialData} />
       <SectionLocationTpl {...locationData} />
       <SectionWithImages {...sectionWithImagesData} />
+      <VideoCardMolecule
+        videoUrl="https://www.youtube.com/embed/_tF4nhOCFAc"
+        title="Institucional"
+      />
       <ContactForm phoneNumber={whatsappData.phoneNumber} />
       <WhatsAppButtonAtom {...whatsappData} />
       <Footer

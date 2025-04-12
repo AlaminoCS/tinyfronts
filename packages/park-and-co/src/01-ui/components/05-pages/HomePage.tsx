@@ -61,7 +61,7 @@ const HomePage = () => {
       <SectionWithImages {...sectionWithImagesData} />
       <VideoCardMolecule
         videoUrl="https://www.youtube.com/embed/_tF4nhOCFAc"
-        title="Institucional"
+        title="Vídeo Institucional"
       />
       <ContactForm phoneNumber={whatsappData.phoneNumber} />
       <WhatsAppButtonAtom {...whatsappData} />

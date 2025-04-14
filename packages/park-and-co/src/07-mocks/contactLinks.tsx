@@ -5,8 +5,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 
 export const contactLinks = [
   {
-    text: 'contato@parkandco.com',
-    href: 'mailto:contato@parkandco.com',
+    text: 'adm@parkcoestacionamentos.com',
+    href: 'mailto:adm@parkcoestacionamentos.com',
     icon: <EmailIcon />,
   },
   {

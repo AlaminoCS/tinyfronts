@@ -5,8 +5,8 @@ export const footerData = {
 
   contact: {
     address: 'Avenida Comendador Pereira Inácio, 900 - Jardim Vergueiro, Sorocaba/SP',
-    phone: '(15) 98137-7293',
-    email: 'contato@parkandco.com',
+    phone: '(15) 99150-9557',
+    email: 'adm@parkcoestacionamentos.com',
     businessHours: ['Segunda a Sexta: 08h às 18h', 'Sábado: 09h às 13h', 'Domingo: Fechado'],
   },
 

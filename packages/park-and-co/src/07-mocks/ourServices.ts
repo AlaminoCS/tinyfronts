@@ -20,9 +20,9 @@ export const ourServices = [
       'Oferecemos um serviço completo desde a implantação de sistema, operacional, treinamento, manutenção.',
   },
   {
-    image: IMAGES.servicos3,
+    image: IMAGES.servicos4,
     title: 'Segurança',
     description:
-      'lorem ipsum dolor sit amet',
-  },
+      'Possuímos o melhor em segurança em estacionamento com controle de acesso via LPR e Face ID, monitoramento, iluminação, vigilância e organização além do seguro garagista que protege contra danos, furtos e responsabilidades com veículos sob a guarda do estacionamento.'
+    },
 ]

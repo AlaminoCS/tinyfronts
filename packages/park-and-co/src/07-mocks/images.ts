@@ -14,6 +14,10 @@ export const IMAGES = {
     '../04-assets/images/nossos-servicos-3.jpg',
     import.meta.url
   ).href,
+  servicos4: new URL(
+    '../04-assets/images/nossos-servicos-4.jpg',
+    import.meta.url
+  ).href,
   separadora: new URL(
     '../04-assets/images/imagem-separadora.jpg',
     import.meta.url

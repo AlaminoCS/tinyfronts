@@ -19,4 +19,10 @@ export const ourServices = [
     description:
       'Oferecemos um serviço completo desde a implantação de sistema, operacional, treinamento, manutenção.',
   },
+  {
+    image: IMAGES.servicos3,
+    title: 'Segurança',
+    description:
+      'lorem ipsum dolor sit amet',
+  },
 ]
